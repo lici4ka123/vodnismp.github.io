@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантажити VLAUNCHER</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Dynamic background lights -->
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+    
+    <!-- Top Bar with Online Count -->
+    <div class="top-bar">
+        <div class="server-status">
+            <span class="status-dot"></span>
+            <span id="server-online-text">Отримання статусу...</span>
+        </div>
+    </div>
+
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section id="download" class="section hero">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Vlauncher Logo" style="max-width: 150px; height: auto;">
+                    </div>
+                    
+                    <h1 class="title">VLAUNCHER</h1>
+                    <p class="subtitle">Офіційний лаунчер для нашого серверу VodniSMP.</p>
+                    
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#" id="download-btn" class="btn-download">
+                            <span class="btn-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </span>
+                            <span class="btn-text">Завантажити</span>
+                        </a>
+                        <a href="https://discord.gg/DsfXq6dGMr" target="_blank" class="btn-outline">Наш Discord</a>
+                    </div>
+                    
+                    <div id="footer-version" class="version-info">
+                        Версія для Windows 10/11 (64-bit)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section features">
+            <div class="container">
+                <h2 class="section-title">Чому саме VLAUNCHER?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                        </div>
+                        <h3>Максимальна швидкість</h3>
+                        <p>Наш лаунчер оптимізовано для найшвидшого завантаження гри без зайвих затримок.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <h3>Ексклюзивні функції</h3>
+                        <p>Вбудовані унікальні системи: від власної економіки до рулетки прямо в лаунчері.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h3>Безпека акаунту</h3>
+                        <p>Надійна система авторизації та захисту даних гравців серверу VodniSMP.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3>Свої Модифікації</h3>
+                        <p>Всі потрібні модифікації та ресурспаки завантажуються автоматично. Жодних ручних налаштувань.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                        </div>
+                        <h3>Голосовий чат</h3>
+                        <p>Вбудований голосовий чат з просторовим звуком для зручної комунікації з іншими гравцями.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        </div>
+                        <h3>Кастомізація</h3>
+                        <p>Можливість налаштувати інтерфейс під себе, встановити власні плащі та HD-скіни.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Start Section -->
+        <section id="start" class="section start">
+            <div class="container">
+                <h2 class="section-title">Як почати грати?</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Завантажте лаунчер</h3>
+                            <p>Натисніть кнопку завантаження вище та збережіть інсталятор на свій комп'ютер.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Встановіть та увійдіть</h3>
+                            <p>Запустіть завантажений файл, пройдіть швидку установку та увійдіть у свій акаунт.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Насолоджуйтесь грою!</h3>
+                            <p>Натисніть "Грати" та поринайте у захопливий світ нашого сервера.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq">
+            <div class="container">
+                <h2 class="section-title">Часті запитання</h2>
+                <div class="faq-list">
+                    <details class="faq-item" open>
+                        <summary>Чи потрібна ліцензія Minecraft?</summary>
+                        <p>Ні, ви можете грати на нашому сервері навіть без ліцензійного акаунта. Наш лаунчер підтримує вхід без ліцензії.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Лаунчер видає помилку під час інсталяції</summary>
+                        <p>Переконайтеся, що ви запускаєте інсталятор від імені Адміністратора та у вас встановлено останні оновлення Windows.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Як отримати бонусні крутки?</summary>
+                        <p>Бонусні крутки можна отримати за участь у подіях або як нагороду.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Скільки оперативної пам'яті потрібно виділити?</summary>
+                        <p>Рекомендуємо виділяти щонайменше 2-4 ГБ оперативної пам'яті для стабільної та комфортної гри з усіма модами.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Чи можу я встановити власні моди?</summary>
+                        <p>Ні, лаунчер має жорстку прив'язку до офіційної збірки серверу для уникнення використання читів та забезпечення стабільності.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Де можна повідомити про баг чи порушника?</summary>
+                        <p>Ви можете створити тікет на нашому Discord сервері, і адміністрація оперативно вам допоможе.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Section -->
+        <section id="discord" class="section discord" style="min-height: 50vh;">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 20px;">Приєднуйтесь до Community</h2>
+                <p style="color: rgba(255,255,255,0.6); margin-bottom: 40px; font-size: 1.1rem;">Спілкуйтеся з іншими гравцями, дізнавайтеся новини та отримуйте підтримку.</p>
+                <a href="https://discord.gg/DsfXq6dGMr" target="_blank" class="btn-discord">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    Перейти в Discord
+                </a>
+            </div>
+        </section>
+        
+        <footer class="site-footer">
+            <p>© 2026 VodniSMP. Всі права захищено.</p>
+        </footer>
+    </main>
+
+    <!-- Bottom Navigation Pill -->
+    <nav class="bottom-nav">
+        <a href="#download" class="nav-item active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span class="nav-text">Завантаження</span>
+        </a>
+        <a href="#features" class="nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span class="nav-text">Особливості</span>
+        </a>
+        <a href="#start" class="nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span class="nav-text">Як почати</span>
+        </a>
+        <a href="#faq" class="nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span class="nav-text">FAQ</span>
+        </a>
+
+        <a href="https://discord.gg/DsfXq6dGMr" target="_blank" class="nav-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+            <span class="nav-text">Discord</span>
+        </a>
+    </nav>
+    
+    <script>
+        // Server Online Status Fetcher
+        async function fetchServerStatus() {
+            try {
+                // Сервіс mcstatus.io чомусь блокується вашим сервером, тому повертаємо mcsrvstat (він оновлюється раз на 5 хв)
+                const res = await fetch('https://api.mcsrvstat.us/3/95.216.123.228:25915');
+                const data = await res.json();
+                const textEl = document.getElementById('server-online-text');
+                const dot = document.querySelector('.status-dot');
+                
+                if (data.online) {
+                    textEl.textContent = `Онлайн: ${data.players.online} / ${data.players.max}`;
+                    dot.style.background = '#00ff64';
+                    dot.style.boxShadow = '0 0 10px rgba(0,255,100,0.5)';
+                } else {
+                    textEl.textContent = 'Сервер офлайн';
+                    dot.style.background = '#ff5e5e';
+                    dot.style.boxShadow = '0 0 10px rgba(255,94,94,0.5)';
+                    dot.style.animation = 'none';
+                }
+            } catch (err) {
+                document.getElementById('server-online-text').textContent = 'Статус невідомий';
+            }
+        }
+        
+        // Initial fetch and interval
+        fetchServerStatus();
+        setInterval(fetchServerStatus, 60000);
+
+        // GitHub Release Fetcher (Hidden link)
+        let downloadUrl = '';
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            const btn = document.getElementById('download-btn');
+            const repo = 'lici4ka123/09988377621VLAUCHoff';
+            
+            try {
+                const response = await fetch(`https://api.github.com/repos/${repo}/releases/latest`);
+                const data = await response.json();
+                
+                if (data.assets && data.assets.length > 0) {
+                    const exeAsset = data.assets.find(asset => asset.name.endsWith('.exe'));
+                    if (exeAsset) {
+                        downloadUrl = exeAsset.browser_download_url;
+                        document.getElementById('footer-version').textContent = `Актуальна версія: ${data.name || data.tag_name} (Windows 10/11 64-bit)`;
+                    } else {
+                        downloadUrl = data.assets[0].browser_download_url;
+                    }
+                } else if (data.html_url) {
+                    downloadUrl = data.html_url;
+                }
+            } catch (error) {
+                console.error('Помилка при отриманні релізу з GitHub:', error);
+            }
+            
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (downloadUrl) {
+                    window.location.href = downloadUrl;
+                } else {
+                    alert('Завантаження ще не готове, спробуйте пізніше.');
+                }
+            });
+        });
+
+        // Scroll Spy for Bottom Nav
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                // Ignore external links like discord
+                if(item.getAttribute('href').startsWith('#')) {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === `#${current}`) {
+                        item.classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
